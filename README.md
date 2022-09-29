@@ -18,9 +18,9 @@
 ## Dependency Inversion Principle
 	Dependa de abstrações e não de implementações;
 
-  Exemplo implementação: 
+  Exemplo implementação: <br>
   `const movie = new movie();`	
 
-  Exemplo de abstração: 
+  Exemplo de abstração: <br>
   `class DramaCategory implements Category {}
   const movie = new movie(“name”, new DramaCategory());`
