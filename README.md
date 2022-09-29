@@ -22,5 +22,5 @@
   `const movie = new movie();`	
 
   Exemplo de abstração: <br>
-  `class DramaCategory implements Category {} <br>
-  const movie = new movie(“name”, new DramaCategory());`
+  `class DramaCategory implements Category {}` <br>
+  `const movie = new movie(“name”, new DramaCategory());`
