@@ -71,6 +71,45 @@ A network é a comunicação entre containeres que estão na mesma rede.
 	macvlan -> mac address
 	none -> sem rede
 
+## GitOps (GitFlow)
+O GitOps consiste em metodologias de versionamento e automatização para trazer uma maior consistência e inteligibilidade ao código.
+### Tipos de ramificações (branch):
+  Master -> Branch de Produção;
+  Develop -> Esta ramificação deve conter o histórico completo do projeto, enquanto a Master possui uma versão “abreviada”;
+  Feature -> Cada recurso novo que for acrescentado deve ser criado através de ramificações específicas e após a conclusão, ocorre o merge na ramificação Develop;
+  Release -> Uma vez que a branch Develop está pronta para ser enviada para produção, ocorre uma bifurcação da branch Develop em que se dá o processo de lançamento da versão;
+  Hotfix -> Ramificação de manutenção que  é utilizada para corrigir eventuais bugs e após a correção é mergido na Develop e Master.
+
+<img src="./assets/gitops/branches.png">
+
+### Assinatura de Commits
+Todas as vezes que for feito um commit será realizado uma verificação da sua chave pública, a que está no github/bitbucket/gitlab,  e privada, a que está armazenada localmente. Se ambas forem iguais, o commit é assinado. Este processo serve para obter segurança na assinatura dos commit, e assim, evitar que se passem por você.
+Para tal, se torna necessário o uso de chaves GPG ou GNU Privacy Guard, estas irão proporcionar as assinaturas públicas e privadas e a sua verificação.
+
+### Protegendo Branches
+É de extrema importância ter uma forma de proteger a ramificação de produção, já que a possibilidade de ocorrerem commits diretamente nas branches deve ser inibida, ao passo que ao trabalhar com Pull Requests nos possibilita realizar Code Reviews, além de trazer mais uma camada de segurança para a aplicação.
+
+### Semantical Versioning
+“No mundo de gerenciamento de software existe algo terrível conhecido como inferno das dependências (“dependency hell”). Quanto mais o sistema cresce, e mais pacotes são adicionados a ele, maior será a possibilidade de, um dia, você encontrar-se neste poço de desespero”
+
+O excerto acima foi retirado do próprio site do SemVer [https://semver.org/lang/pt-BR/] e é justamente para evitar este problema que o versionamento semântico foi criado.
+
+Existem três fatores que definem a versão de uma aplicação que trabalha com semantical versioning:
+  -Maior(MAJOR): quando fizer mudanças incompatíveis na API,
+  -Menor(MINOR): quando adicionar funcionalidades mantendo compatibilidade,
+  -Correção(PATCH): quando corrigir falhas mantendo compatibilidade.
+
+Exemplo: MAJOR.MINOR.PATCH = 3.1.5.
+
+### Convencional Commits 
+Os convencional commits nos ajudam a entender o motivo do commit ter sido realizado. <br>
+De acordo com o padrão Voors, temos as seguintes convenções para prefixo da mensagem do commit:
+  -Feat: Usado ao adicionar funcionalidades
+  -Style: Usado em alterações de estilo
+  -Refactor: Usado para a reescrita de um código
+  -Hotfix: Usado para correções de erros no código
+
+
 ## Arquitetura do Projeto Prático (streaming de vídeos)
 ### Funcionalidades:
 Assinatura do serviço pelo cliente
