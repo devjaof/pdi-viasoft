@@ -1,3 +1,36 @@
+# PDI - Segundo semestre de 2022
+
+## As 10 Heurísticas de Nielsen
+#### 1- Visibilidade do status do sistema
+Em ambientes digitais dependemos quase que exclusivamente da nossa visão para compreendermos o que está acontecendo no sistema. Para tal, uma das maiores preocupações quanto à experiência do usuário deve ser a facilidade para o usuário saber qual é a sua posição dentro do sistema.
+
+#### 2 - Compatibilidade entre o sistema e o mundo real
+O sistema precisa falar a mesma língua do usuário, ou seja, os símbolos da interface precisam fazer sentido com a rotina do sistema, por exemplo.
+
+#### 3 - Controle e liberdade para o usuário
+Frequentemente o usuário pode realizar ações por engano, desta forma, o sistema deve ter uma maneira de “salvar” o usuário de seu engano. Um exemplo é o atalho “Ctrl+Z”, que restaura o último delete.
+
+#### 4 - Consistência e padronização
+A padronização e consistência entre as telas de um sistema  é essencial para qualquer aplicação. Isto torna a experiência do usuário muito mais interessante, já que irá facilitar o uso do sistema.
+
+#### 5 - Prevenção de erros
+A prevenção de erros é imprescindível e consiste na exibição de caixas de confirmação quando o usuário for realizar alguma ação específica, assim evita-se que o usuário realize ações sem querer das quais pode se arrepender.
+
+#### 6 - Reconhecimento > memorização
+É mais interessante que o usuário saiba o seu caminho dentro do sistema por meio do reconhecimento de padrões do que através de memorizações.
+
+#### 7 - Eficiência e flexibilidade de uso
+A interface da aplicação deve ser útil tanto para o usuário leigo quanto para o mais experiente.
+
+#### 8 - Estética e design minimalista
+Quanto menor a quantidade de informações irrelevantes existirem na tela, mais fácil fica a utilização do sistema. Sendo assim, torna-se de extrema importância manter na tela apenas as informações que são realmente necessárias.
+
+#### 9 - Reconhecimento e diagnóstico de erros pelo usuário
+Outro ponto de extrema relevância é ajudar o usuário a entender o erro cometido. Como exemplo temos a exibição da mensagem “Acesso negado! Credenciais inválidas.” ao errar a senha ou usuário para logar no Voors.
+
+#### 10 - Documentação
+Apesar de não serem tão acessadas pelos usuários, nas documentações podemos explicar o funcionamento e detalhar todos os passos para utilização do sistema. Desta forma, podemos tornar os usuários independentes do suporte.
+
 ## SOLID
 ### Single Responsibility Principle
 Uma classe deve ter apenas uma responsabilidade, apenas um motivo para ser alterada.
@@ -195,7 +228,7 @@ Replicação de dados utilizando Apacha Kafka e Kafka Connect;
 #### Dinâmica Geral dos Microsserviços:
 <img src="./assets/arquitetura/dinamica-microsservicos.png">
 
-### Ambiente de Desenvolvimento
+### Ambiente de Desenvolvimento:
 Docker pra tudo: rápido, ambientes correspondentes, gerar builds etc
 
 #### CI/CD
