@@ -74,11 +74,11 @@ A network é a comunicação entre containeres que estão na mesma rede.
 ## GitOps (GitFlow)
 O GitOps consiste em metodologias de versionamento e automatização para trazer uma maior consistência e inteligibilidade ao código.
 ### Tipos de ramificações (branch):
-  Master -> Branch de Produção;
-  Develop -> Esta ramificação deve conter o histórico completo do projeto, enquanto a Master possui uma versão “abreviada”;
-  Feature -> Cada recurso novo que for acrescentado deve ser criado através de ramificações específicas e após a conclusão, ocorre o merge na ramificação Develop;
-  Release -> Uma vez que a branch Develop está pronta para ser enviada para produção, ocorre uma bifurcação da branch Develop em que se dá o processo de lançamento da versão;
-  Hotfix -> Ramificação de manutenção que  é utilizada para corrigir eventuais bugs e após a correção é mergido na Develop e Master.
+  -Master -> Branch de Produção;
+  -Develop -> Esta ramificação deve conter o histórico completo do projeto, enquanto a Master possui uma versão “abreviada”;
+  -Feature -> Cada recurso novo que for acrescentado deve ser criado através de ramificações específicas e após a conclusão, ocorre o merge na ramificação Develop;
+  -Release -> Uma vez que a branch Develop está pronta para ser enviada para produção, ocorre uma bifurcação da branch Develop em que se dá o processo de lançamento da versão;
+  -Hotfix -> Ramificação de manutenção que  é utilizada para corrigir eventuais bugs e após a correção é mergido na Develop e Master.
 
 <img src="./assets/gitops/branches.png">
 
